@@ -52,10 +52,12 @@ class q2apro_email_strangulator_event
 		{
 			require_once QA_INCLUDE_DIR.'qa-db-metas.php';
 			$users_in_post = qa_post_text('email_strangulator_userstomute');
-			$users_in = str_replace(' ', '', $users_in_post);
-			$users_array = explode(',', $users_in);
+			// usernames can hold spaces, so we only remove the spaces around the commas by trim after explode
+			// $users_in = str_replace(' ', '', $users_in_post);
+			$users_array = explode(',', $users_in_post);
 			foreach($users_array as $useridhan)
 			{
+				$useridhan = trim($useridhan);
 				$userid = null;
 				if(is_numeric($useridhan))
 				{
