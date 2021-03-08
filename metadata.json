@@ -1,0 +1,15 @@
+{
+  "name": "Q2APRO Email Strangulator",
+  "uri": "https://www.q2apro.com/plugins/emailoff",
+  "description": "Adds an option to each user profile to disable all email notifications for new forum posts",
+  "version": "0.1",
+  "date": "2016-09-09",
+  "author": "q2apro.com",
+  "author_uri": "http://www.q2apro.com",
+  "license": "GPLv3",
+  "update_uri": "https://raw.githubusercontent.com/q2apro.com/q2apro-email-strangulator/master/metadata.json",
+  "min_q2a": "1.6",
+  "min_php": "5.1.6"
+  "load_order": "after_db_init"
+}
+
